@@ -52,5 +52,7 @@ Si la entrada es válida:
 Se muestra la tabla de tokens, el árbol de derivación  y el código JavaScript generado.
 
 Si la entrada contiene errores:
-Se informa si el error es léxico o sintáctico, la línea y columna del error,el lexema encontrado y el token esperado.
+Se informa si el error es léxico o sintáctico, la línea y columna del error, el lexema encontrado y el token esperado.
+
+
 
