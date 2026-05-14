@@ -1,0 +1,5 @@
+do {
+    puts("inicio");
+    puts("proceso");
+    break;
+} while(0);
