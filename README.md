@@ -2,28 +2,55 @@
 
 Este proyecto implementa un analizador léxico y sintáctico utilizando ANTLR4 y Node.js.
 
-La gramática reconoce estructuras `do while` simples con:
+El analizador reconoce estructuras `do while` simples que incluyen:
 - sentencias `puts`
 - sentencias `break`
-- condiciones booleanas representadas por `0` y `1`
+- condiciones `0` y `1`
 
-Además:
+Además, el programa:
 - genera una tabla de tokens,
 - detecta errores léxicos,
 - detecta errores sintácticos,
+- genera el árbol de derivación,
 - y traduce la entrada válida a código JavaScript.
 
-# Requisitos
+---
 
-Tener instalado:
+## Cómo descargar el proyecto
 
-- Node.js
-- Java
-- ANTLR4
+Clonar el repositorio utilizando:
 
-# Instalación
+``` bash
+
+git clone https://github.com/USUARIO/LEGAJO.git
+
+```
+
+Luego abrir la carpeta del proyecto en Visual Studio Code
+
+## Instalación
 
 Abrir una terminal dentro de la carpeta del proyecto y ejecutar:
 
-```bash
-npm install
+`npm install`
+
+## Cómo ejecutar el programa
+
+Los ejemplos de prueba incluidos en el repositorio pueden copiarse dentro del archivo:
+
+`input.txt`
+
+Una vez colocado el ejemplo deseado, ejecutar el proyecto desde la terminal con:
+
+`npm start`
+
+También puede ejecutarse desde Visual Studio Code utilizando F5.
+
+## ¿Qué muestra el programa?
+
+Si la entrada es válida:
+Se muestra la tabla de tokens, el árbol de derivación  y el código JavaScript generado.
+
+Si la entrada contiene errores:
+Se informa si el error es léxico o sintáctico, la línea y columna del error,el lexema encontrado y el token esperado.
+
