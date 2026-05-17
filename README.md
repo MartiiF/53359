@@ -82,7 +82,7 @@ Se informa si el error es léxico o sintáctico, la línea y columna del error, 
 El repositorio contiene ejemplos válidos e inválidos para probar el funcionamiento del analizador.
 Recuerde reemplazar los mismos dentro del archivo input.txt.
 
-### Ejemplo váido 1
+###  Input correcto 1
 
 Entrada:
 
@@ -123,7 +123,7 @@ do {
 } while(1);
 ``` 
 
-### Ejemplo váido 2
+### Input correcto 2
 
 Entrada:
 
@@ -170,7 +170,7 @@ do {
 } while(0);
 ``` 
 
-### Ejemplo inváido 1
+### Input incorrecto 1
 
 Entrada:
 
@@ -209,7 +209,7 @@ Tipo de token: NEWLINE
 Se esperaba: {'break', 'puts'}
 ``` 
 
-### Ejemplo inváido 2
+### Input incorrecto 2
 
 Entrada:
 
