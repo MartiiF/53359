@@ -4,7 +4,7 @@ import antlr4 from 'antlr4';
 import DoWhileLoopListener from './DoWhileLoopListener.js';
 import DoWhileLoopVisitor from './DoWhileLoopVisitor.js';
 
-const serializedATN = [4,1,20,83,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
+const serializedATN = [4,1,18,83,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
 2,5,7,5,2,6,7,6,2,7,7,7,1,0,1,0,1,1,1,1,1,1,3,1,22,8,1,1,1,1,1,1,1,3,1,27,
 8,1,5,1,29,8,1,10,1,12,1,32,9,1,1,2,1,2,3,2,36,8,2,1,3,1,3,1,3,3,3,41,8,
 3,1,3,1,3,3,3,45,8,3,1,3,1,3,1,3,1,3,1,3,1,3,1,3,1,4,1,4,3,4,56,8,4,1,4,
@@ -12,18 +12,18 @@ const serializedATN = [4,1,20,83,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,
 1,5,1,5,1,5,1,5,1,6,1,6,1,6,1,7,1,7,1,7,0,1,2,8,0,2,4,6,8,10,12,14,0,1,1,
 0,1,2,86,0,16,1,0,0,0,2,18,1,0,0,0,4,33,1,0,0,0,6,37,1,0,0,0,8,69,1,0,0,
 0,10,71,1,0,0,0,12,77,1,0,0,0,14,80,1,0,0,0,16,17,3,2,1,0,17,1,1,0,0,0,18,
-19,6,1,-1,0,19,21,3,4,2,0,20,22,5,19,0,0,21,20,1,0,0,0,21,22,1,0,0,0,22,
-30,1,0,0,0,23,24,10,1,0,0,24,26,3,4,2,0,25,27,5,19,0,0,26,25,1,0,0,0,26,
+19,6,1,-1,0,19,21,3,4,2,0,20,22,5,17,0,0,21,20,1,0,0,0,21,22,1,0,0,0,22,
+30,1,0,0,0,23,24,10,1,0,0,24,26,3,4,2,0,25,27,5,17,0,0,26,25,1,0,0,0,26,
 27,1,0,0,0,27,29,1,0,0,0,28,23,1,0,0,0,29,32,1,0,0,0,30,28,1,0,0,0,30,31,
-1,0,0,0,31,3,1,0,0,0,32,30,1,0,0,0,33,35,3,6,3,0,34,36,5,19,0,0,35,34,1,
-0,0,0,35,36,1,0,0,0,36,5,1,0,0,0,37,38,5,5,0,0,38,40,5,9,0,0,39,41,5,19,
-0,0,40,39,1,0,0,0,40,41,1,0,0,0,41,42,1,0,0,0,42,44,3,8,4,0,43,45,5,19,0,
+1,0,0,0,31,3,1,0,0,0,32,30,1,0,0,0,33,35,3,6,3,0,34,36,5,17,0,0,35,34,1,
+0,0,0,35,36,1,0,0,0,36,5,1,0,0,0,37,38,5,5,0,0,38,40,5,9,0,0,39,41,5,17,
+0,0,40,39,1,0,0,0,40,41,1,0,0,0,41,42,1,0,0,0,42,44,3,8,4,0,43,45,5,17,0,
 0,44,43,1,0,0,0,44,45,1,0,0,0,45,46,1,0,0,0,46,47,5,10,0,0,47,48,5,6,0,0,
 48,49,5,13,0,0,49,50,3,14,7,0,50,51,5,14,0,0,51,52,5,8,0,0,52,7,1,0,0,0,
-53,55,3,10,5,0,54,56,5,19,0,0,55,54,1,0,0,0,55,56,1,0,0,0,56,70,1,0,0,0,
-57,59,3,10,5,0,58,60,5,19,0,0,59,58,1,0,0,0,59,60,1,0,0,0,60,61,1,0,0,0,
-61,63,3,8,4,0,62,64,5,19,0,0,63,62,1,0,0,0,63,64,1,0,0,0,64,70,1,0,0,0,65,
-67,3,12,6,0,66,68,5,19,0,0,67,66,1,0,0,0,67,68,1,0,0,0,68,70,1,0,0,0,69,
+53,55,3,10,5,0,54,56,5,17,0,0,55,54,1,0,0,0,55,56,1,0,0,0,56,70,1,0,0,0,
+57,59,3,10,5,0,58,60,5,17,0,0,59,58,1,0,0,0,59,60,1,0,0,0,60,61,1,0,0,0,
+61,63,3,8,4,0,62,64,5,17,0,0,63,62,1,0,0,0,63,64,1,0,0,0,64,70,1,0,0,0,65,
+67,3,12,6,0,66,68,5,17,0,0,67,66,1,0,0,0,67,68,1,0,0,0,68,70,1,0,0,0,69,
 53,1,0,0,0,69,57,1,0,0,0,69,65,1,0,0,0,70,9,1,0,0,0,71,72,5,4,0,0,72,73,
 5,13,0,0,73,74,5,15,0,0,74,75,5,14,0,0,75,76,5,8,0,0,76,11,1,0,0,0,77,78,
 5,3,0,0,78,79,5,8,0,0,79,13,1,0,0,0,80,81,7,0,0,0,81,15,1,0,0,0,11,21,26,
@@ -44,8 +44,8 @@ export default class DoWhileLoopParser extends antlr4.Parser {
                             null, "'('", "')'" ];
     static symbolicNames = [ null, "CERO", "UNO", "BREAK", "PUTS", "DO", 
                              "WHILE", "CUOTE", "SEMI", "LKEY", "RKEY", "LETRA", 
-                             "DIGITO", "LPAREN", "RPAREN", "CADENA", "CARACTERES", 
-                             "CARACTER", "SIMBOLO", "NEWLINE", "WS" ];
+                             "DIGITO", "LPAREN", "RPAREN", "CADENA", "SIMBOLO", 
+                             "NEWLINE", "WS" ];
     static ruleNames = [ "prog", "instrucciones", "instruccion", "bucle", 
                          "sentencia", "salida", "terminar", "condicion" ];
 
@@ -214,7 +214,7 @@ export default class DoWhileLoopParser extends antlr4.Parser {
 	        this.state = 40;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===19) {
+	        if(_la===17) {
 	            this.state = 39;
 	            this.match(DoWhileLoopParser.NEWLINE);
 	        }
@@ -224,7 +224,7 @@ export default class DoWhileLoopParser extends antlr4.Parser {
 	        this.state = 44;
 	        this._errHandler.sync(this);
 	        _la = this._input.LA(1);
-	        if(_la===19) {
+	        if(_la===17) {
 	            this.state = 43;
 	            this.match(DoWhileLoopParser.NEWLINE);
 	        }
@@ -287,7 +287,7 @@ export default class DoWhileLoopParser extends antlr4.Parser {
 	            this.state = 59;
 	            this._errHandler.sync(this);
 	            _la = this._input.LA(1);
-	            if(_la===19) {
+	            if(_la===17) {
 	                this.state = 58;
 	                this.match(DoWhileLoopParser.NEWLINE);
 	            }
@@ -439,11 +439,9 @@ DoWhileLoopParser.DIGITO = 12;
 DoWhileLoopParser.LPAREN = 13;
 DoWhileLoopParser.RPAREN = 14;
 DoWhileLoopParser.CADENA = 15;
-DoWhileLoopParser.CARACTERES = 16;
-DoWhileLoopParser.CARACTER = 17;
-DoWhileLoopParser.SIMBOLO = 18;
-DoWhileLoopParser.NEWLINE = 19;
-DoWhileLoopParser.WS = 20;
+DoWhileLoopParser.SIMBOLO = 16;
+DoWhileLoopParser.NEWLINE = 17;
+DoWhileLoopParser.WS = 18;
 
 DoWhileLoopParser.RULE_prog = 0;
 DoWhileLoopParser.RULE_instrucciones = 1;
