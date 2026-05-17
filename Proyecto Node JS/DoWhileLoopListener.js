@@ -1,4 +1,4 @@
-import CalculatorListener from "./generated/DoWhileLoopListener.js";
+import DoWhileLoopListener from "./generated/DoWhileLoopListener.js";
 
 export class CustomDoWhileLoopListener extends DoWhileLoopListener {
 

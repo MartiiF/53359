@@ -14,7 +14,32 @@ Además, el programa:
 - genera el árbol de derivación,
 - y traduce la entrada válida a código JavaScript.
 
----
+
+## Estructura del proyecto
+
+El proyecto se organiza de la siguiente manera:
+
+- `DoWhileLoop.g4`  
+  Contiene la gramática utilizada por ANTLR.
+
+- `index.js`  
+  Archivo principal encargado de ejecutar el analizador.
+
+- `CustomDoWhileLoopVisitor.js`  
+  Implementa la traducción de la entrada válida a código JavaScript.
+
+- `generated/`  
+  Contiene los archivos generados automáticamente por ANTLR.
+
+- `input.txt`  
+  Archivo utilizado como entrada del analizador.
+
+- `ejemplos-validos/`  
+  Contiene ejemplos válidos para probar el analizador.
+
+- `ejemplos-invalidos/`  
+  Contiene ejemplos inválidos para verificar la detección de errores.
+
 
 ## Cómo descargar el proyecto
 
@@ -54,5 +79,54 @@ Se muestra la tabla de tokens, el árbol de derivación  y el código JavaScript
 Si la entrada contiene errores:
 Se informa si el error es léxico o sintáctico, la línea y columna del error, el lexema encontrado y el token esperado.
 
+## Ejemplos Incluidos
 
+El repositorio contiene ejemplos válidos e inválidos para probar el funcionamiento del analizador.
+Recuerde reemplazar los mismos dentro del archivo input.txt.
 
+### Ejemplo váido 1
+
+Entrada:
+
+``` bash
+do {
+puts("Hola");
+} while(1);
+``` 
+
+Salida esperada:
+
+### Ejemplo váido 2
+
+Entrada:
+
+``` bash
+do {
+puts("Mensaje");
+break;
+} while(0);
+``` 
+
+### Ejemplo inváido 1
+
+Entrada:
+
+``` bash
+do {
+puts("Hola")
+} while(1);
+``` 
+
+Salida esperada:
+
+### Ejemplo inváido 2
+
+Entrada:
+
+``` bash
+do {
+puts(Hola);
+} while(1);
+``` 
+
+Salida esperada:
