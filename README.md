@@ -132,7 +132,42 @@ do {
 puts("Mensaje");
 break;
 } while(0);
-``` 
+```
+
+Salida esperada
+
+
+TABLA DE TOKENS:
+Lexema: do -> Token: DO
+Lexema: { -> Token: LKEY
+Lexema: 
+ -> Token: NEWLINE
+Lexema: puts -> Token: PUTS
+Lexema: ( -> Token: LPAREN
+Lexema: "Mensaje" -> Token: CADENA
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+Lexema: 
+ -> Token: NEWLINE
+Lexema: break -> Token: BREAK
+Lexema: ; -> Token: SEMI
+Lexema: 
+ -> Token: NEWLINE
+Lexema: } -> Token: RKEY
+Lexema: while -> Token: WHILE
+Lexema: ( -> Token: LPAREN
+Lexema: 0 -> Token: CERO
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+
+Entrada válida.
+Árbol de derivación: (prog (instrucciones (instruccion (bucle do { \r\n (sentencia (salida puts ( "Mensaje" ) ;) \r\n (sentencia (terminar break ;) \r\n)) } while ( (condicion 0) ) ;))))
+
+CÓDIGO JAVASCRIPT GENERADO:
+do {
+   console.log("Mensaje");
+   break;
+} while(0);
 
 ### Ejemplo inváido 1
 
@@ -146,6 +181,32 @@ puts("Hola")
 
 Salida esperada:
 
+
+TABLA DE TOKENS:
+Lexema: do -> Token: DO
+Lexema: { -> Token: LKEY
+Lexema: 
+ -> Token: NEWLINE
+Lexema: puts -> Token: PUTS
+Lexema: ( -> Token: LPAREN
+Lexema: "Hola" -> Token: CADENA
+Lexema: ) -> Token: RPAREN
+Lexema: 
+ -> Token: NEWLINE
+Lexema: } -> Token: RKEY
+Lexema: while -> Token: WHILE
+Lexema: ( -> Token: LPAREN
+Lexema: 1 -> Token: UNO
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+
+ERROR SINTÁCTICO DETECTADO
+Línea: 2
+Columna: 12
+Lexema encontrado: \n
+Tipo de token: NEWLINE
+Se esperaba: {'break', 'puts'}
+
 ### Ejemplo inváido 2
 
 Entrada:
@@ -157,3 +218,33 @@ puts(Hola);
 ``` 
 
 Salida esperada:
+
+
+TABLA DE TOKENS:
+Lexema: do -> Token: DO
+Lexema: { -> Token: LKEY
+Lexema: 
+ -> Token: NEWLINE
+Lexema: puts -> Token: PUTS
+Lexema: ( -> Token: LPAREN
+Lexema: H -> Token: LETRA
+Lexema: o -> Token: LETRA
+Lexema: l -> Token: LETRA
+Lexema: a -> Token: LETRA
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+Lexema: 
+ -> Token: NEWLINE
+Lexema: } -> Token: RKEY
+Lexema: while -> Token: WHILE
+Lexema: ( -> Token: LPAREN
+Lexema: 1 -> Token: UNO
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+
+ERROR SINTÁCTICO DETECTADO
+Línea: 2
+Columna: 5
+Lexema encontrado: H
+Tipo de token: LETRA
+Se esperaba: {'break', 'puts'}
