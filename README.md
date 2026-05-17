@@ -69,8 +69,6 @@ Una vez colocado el ejemplo deseado, ejecutar el proyecto desde la terminal con:
 
 `npm start`
 
-También puede ejecutarse desde Visual Studio Code utilizando F5.
-
 ## ¿Qué muestra el programa?
 
 Si la entrada es válida:
@@ -96,6 +94,7 @@ puts("Hola");
 
 Salida esperada:
 
+``` bash
 TABLA DE TOKENS:
 Lexema: do -> Token: DO
 Lexema: { -> Token: LKEY
@@ -122,6 +121,7 @@ CÓDIGO JAVASCRIPT GENERADO:
 do {
    console.log("hola");
 } while(1);
+``` 
 
 ### Ejemplo váido 2
 
@@ -136,7 +136,7 @@ break;
 
 Salida esperada
 
-
+``` bash
 TABLA DE TOKENS:
 Lexema: do -> Token: DO
 Lexema: { -> Token: LKEY
@@ -168,6 +168,7 @@ do {
    console.log("Mensaje");
    break;
 } while(0);
+``` 
 
 ### Ejemplo inváido 1
 
@@ -181,7 +182,7 @@ puts("Hola")
 
 Salida esperada:
 
-
+``` bash
 TABLA DE TOKENS:
 Lexema: do -> Token: DO
 Lexema: { -> Token: LKEY
@@ -206,6 +207,7 @@ Columna: 12
 Lexema encontrado: \n
 Tipo de token: NEWLINE
 Se esperaba: {'break', 'puts'}
+``` 
 
 ### Ejemplo inváido 2
 
@@ -219,7 +221,7 @@ puts(Hola);
 
 Salida esperada:
 
-
+``` bash
 TABLA DE TOKENS:
 Lexema: do -> Token: DO
 Lexema: { -> Token: LKEY
@@ -248,3 +250,4 @@ Columna: 5
 Lexema encontrado: H
 Tipo de token: LETRA
 Se esperaba: {'break', 'puts'}
+``` 
