@@ -96,6 +96,33 @@ puts("Hola");
 
 Salida esperada:
 
+TABLA DE TOKENS:
+Lexema: do -> Token: DO
+Lexema: { -> Token: LKEY
+Lexema: 
+ -> Token: NEWLINE
+Lexema: puts -> Token: PUTS
+Lexema: ( -> Token: LPAREN
+Lexema: "hola" -> Token: CADENA
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+Lexema: 
+ -> Token: NEWLINE
+Lexema: } -> Token: RKEY
+Lexema: while -> Token: WHILE
+Lexema: ( -> Token: LPAREN
+Lexema: 1 -> Token: UNO
+Lexema: ) -> Token: RPAREN
+Lexema: ; -> Token: SEMI
+
+Entrada válida.
+Árbol de derivación: (prog (instrucciones (instruccion (bucle do { \r\n (sentencia (salida puts ( "hola" ) ;) \r\n) } while ( (condicion 1) ) ;))))
+
+CÓDIGO JAVASCRIPT GENERADO:
+do {
+   console.log("hola");
+} while(1);
+
 ### Ejemplo váido 2
 
 Entrada:
