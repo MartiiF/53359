@@ -47,7 +47,7 @@ Clonar el repositorio utilizando:
 
 ``` bash
 
-git clone https://github.com/USUARIO/LEGAJO.git
+git clone https://github.com/MartiiF/53359.git
 
 ```
 
